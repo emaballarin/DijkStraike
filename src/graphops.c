@@ -42,3 +42,14 @@ void print_graph(linkedlist_type* graph, size_t num_of_nodes)
         printf("\n");
     }
 }
+
+void destroy_graph(linkedlist_type* graph, size_t num_of_elem)
+{
+    for (size_t i=num_of_elem-1; i > 0; i--)
+    {
+        destroy_adjlist(&graph[i]);
+    }
+    destroy_adjlist(graph);
+    free(graph);
+    //destroy_adjlist(graph);
+}

@@ -38,6 +38,7 @@ linkedlist_type* create_empty_adjlist();
 listblock_type* create_new_adjlist_node(const size_t nodekey, const unsigned int weight);
 void insert_block_in_adjlist(linkedlist_type* adjlist, const size_t nodekey, const unsigned int weight);
 void remove_block_from_adjlist(linkedlist_type* adjlist, const size_t nodekey);
+//void destroy_listblock(listblock_type* listblock);
 void destroy_adjlist(linkedlist_type* adjlist);
 void print_adjlist(linkedlist_type* adjlist, void (*key_printer)(const void* value));
 

@@ -85,7 +85,7 @@ void destroy_adjlist(linkedlist_type* adjlist)
     }
 
     // Then remove the empty LL
-    free(adjlist);
+    //free(adjlist);
 }
 
 
